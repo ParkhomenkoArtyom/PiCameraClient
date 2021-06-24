@@ -1,0 +1,8 @@
+export const SET_FILENAME = 'SET_FILENAME';
+export const SET_STORAGE = 'SET_STORAGE';
+export const SET_RESOLUTION = 'SET_RESOLUTION';
+export const SET_FILTERS = 'SET_FILTERS';
+export const SET_CHROMATICITY = 'SET_CHROMATICITY';
+export const WAIT_ALL_IMAGES = 'WAIT_ALL_IMAGES'
+export const SET_ALL_IMAGES = 'SET_ALL_IMAGES'
+export const DELETE_PHOTO = 'DELETE_PHOTO'

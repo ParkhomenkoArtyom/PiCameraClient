@@ -1,0 +1,44 @@
+.container {
+    height: 700px;
+    max-height: 700px;
+    display: flex;
+    flex-direction: row;
+}
+
+.photoHolder {
+   
+    height: 100%;
+    width: 80%;
+    object-fit:cover;
+    object-position:50% 50%;
+    border-bottom-left-radius: 4px;
+    
+  
+}
+
+.photo {
+    position: absolute;
+     
+ }
+
+.detection {
+   position: relative;
+    
+}
+
+
+.photoDataHolder {
+    width: 25%;
+    height: 100%;
+    margin-left: 2%;
+    margin-top: 3%;
+}
+
+.deleteButton {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    font-size: 50px !important;
+    color: #97c6ff;
+    cursor: pointer;
+}

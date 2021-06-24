@@ -1,0 +1,122 @@
+.container {
+    margin-top: 50px;
+    margin-left: 100px;
+    height: 470px;
+}
+
+:root {
+    --borderWidth: 7px;
+    --height: 24px;
+    --width: 12px;
+    --borderColor: #007bff;
+}
+  
+.check {
+    display: inline-block;
+    margin-left: 15px;
+    transform: rotate(45deg);
+    height: var(--height);
+    width: var(--width);
+    border-bottom: var(--borderWidth) solid var(--borderColor);
+    border-right: var(--borderWidth) solid var(--borderColor);
+}
+
+.check:hover,
+.check:focus {
+    border-color: blue;
+}
+
+.inputHolder {
+    width: 200px;
+    margin:auto;
+    height: 30px;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+
+.inputHolder:focus {
+    color: #495057;
+    border-color: #80bdff;
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem rgb(0 123 255 / 25%);
+}
+
+.heading {
+    font-size: 1.5em;
+}
+
+.optionHolder {
+    margin-top: 40px;
+}
+
+.fileNameHolder {
+    height: 33px;
+}
+
+.select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    outline: 0;
+    box-shadow: none;
+    border: 0 !important;
+    background: #007bff;
+    background-image: none;
+}
+  
+.select::-ms-expand {
+    display: none;
+}
+
+.select option {
+    background: white;
+    color: black;
+}
+
+
+.selectHolder {
+    position: relative;
+    display: flex;
+    width: 100x;
+    height: 35px;
+    line-height: 2.1;
+    background: #2c3e50;
+    overflow: hidden;
+    border-radius: .25em;
+    margin-top: 5px;
+}
+
+.select {
+    flex: 1;
+    padding: 0 .5em;
+    color: #fff;
+    cursor: pointer;
+}
+
+.selectHolder::after {
+    content: '\25BC';
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 0 1em;
+    background: #007bff;
+    cursor: pointer;
+    pointer-events: none;
+    -webkit-transition: .25s all ease;
+    -o-transition: .25s all ease;
+    transition: .25s all ease;
+}
+
+.selectHolder:hover::after {
+    color: lightblue;
+}
+  
